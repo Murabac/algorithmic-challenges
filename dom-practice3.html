@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dom - Javascript</title>
+</head>
+<body>
+
+<div class="container">
+
+  <button id="1">Button One</button>
+  <button id="2">Button Two</button>
+  <button id="3">Button Three</button>
+
+</div>
+
+<script type="text/javascript">
+
+  // buttons is a node list. It looks and acts much like an array.
+  const buttons = document.querySelectorAll('button');
+
+  // we use the .forEach method to iterate through each button
+  buttons.forEach((button) => {
+
+    // and for each one we add a 'click' listener
+    button.addEventListener('click', (e) => {
+      alert(button.id);
+    });
+  });
+
+</script>
+</body>
+</html>

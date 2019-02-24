@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dom - Javascript</title>
+</head>
+<body>
+
+<div class="container"></div>
+
+<script type="text/javascript">
+// Selecting the container div from the html above and then inserting new elements inside it.
+const container = document.querySelector('.container');
+
+  //Create Praghraph  Constant that displays "Hey, I am red" with style color of red.
+    const textRed = document.createElement('p');
+    textRed.textContent = "Hey, I am red!";
+    textRed.style.color = "red";
+  //End of TextRed
+
+  //Create Header Constant that displays "I'm a blue h3!" with style color of blue.
+    const headerBlue = document.createElement('h3');
+    headerBlue.textContent = "I'm a blue h3!";
+    headerBlue.style.color = "blue";
+  //End of headerBlue
+
+  //Create NEW div that has two new elements as its children.
+    const content = document.createElement('div');
+    content.style.cssText = "border: solid 3px #000; background: pink";
+
+
+      //Create Header Constant that displays "I'm in a div".
+      const headerInDiv= document.createElement('h1');
+      headerInDiv.textContent = "I'm in a div";
+      //End of headerInDiv
+
+      //Create Praghraph that displays "ME TOO!".
+        const text2 = document.createElement('p');
+        text2.textContent = "ME TOO!";
+      //
+
+      content.appendChild(headerInDiv);
+      content.appendChild(text2);
+  //End of headerBlue
+
+
+container.appendChild(textRed);
+container.appendChild(headerBlue);
+container.appendChild(content);
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+- [Abdirahman's UI solution](https://github.com/Murabac/rock_paper_scissors_ui/) - [View in Browser](https://murabac.github.io/rock_paper_scissors_ui/)
+- [Abdirahman's Etch A Sketch solution](https://github.com/Murabac/Etch-Sketch) - [View in Browser](https://murabac.github.io/Etch-Sketch/)

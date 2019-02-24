@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Practice - Javascript</title>
+</head>
+<body>
+
+
+
+
+  <script type="text/javascript">
+
+      function add7(number){
+
+        return number + 7;
+      }
+      var a = 10;
+      document.write(add7(a));
+
+      function multiply(number1, number2){
+
+        return number1 * number2;
+      }
+       a = 15;
+      var b = 2;
+      document.write("<br>");
+      document.write(multiply(a,b));
+
+
+      //capitalize
+
+      function capitalize(name){
+
+        return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+      }
+      document.write("<br>");
+      let name = "ABDIRAHMAN";
+      document.write(capitalize(name));
+
+
+      //LAST-LETTER
+      function lastLetter(word){
+
+        return word.split("").splice(-1);
+      }
+      document.write("<br>");
+      let word = "Mohamed";
+      document.write(lastLetter(word));
+
+
+  </script>
+
+</body>
+</html>

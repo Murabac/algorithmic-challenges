@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dom - Javascript</title>
+</head>
+<body>
+
+<div class="container">
+<!-- First method: create onclick method in the html tag element as an attripute called onclick. -->
+  <button onclick="alert('I am button One')">Button One</button>
+  <button id="Btn2">Button Two</button>
+  <button id="Btn3">Button Three</button>
+
+</div>
+
+<script type="text/javascript">
+// Second method: creating onclick method in javascript file using arrow functions.
+  const btn2 = document.querySelector("#Btn2");
+  btn2.onclick = () =>alert("I am button Two")
+
+//Third Method:
+const btn3 = document.querySelector("#Btn3");
+btn3.addEventListener(
+  'click', () => {
+    alert("I am button Three");
+  }
+);
+</script>
+</body>
+</html>
