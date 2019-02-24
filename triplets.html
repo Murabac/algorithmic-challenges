@@ -8,20 +8,42 @@
   <title>Compare the Triplets</title>
 </head>
 <body>
+
   <header class="header"><h1>Your Solution!</h1></header>
-  <div class="container">
+
+  <main class="container">
     <p class="content" id="content"></p>
-  </div>
+  </main>
+
+  <footer class="footer">Complete the function compareTriplets in the editor below. It must return an array of two integers, the first being Alice's score and the second being Bob's.
+compareTriplets has the following parameter(s):<br />
+<ul>
+  <li>a: an array of integers representing Asma's challenge rating = [2,5,6]</li>
+  <li>b: an array of integers representing Abdi's challenge rating = [4,2,4]</li>
+</ul>
+ <br />
+</footer>
 
 <script type="text/javascript">
-  var ar = [1,2,3,4,5,6];
-  var sum = 0;
+  var abdi = [4,2,4];
+  var asma = [2,5,6];
+  var abdiScore = 0;
+  var asmaScore = 0;
 
-  for(i = 0; i < ar.length; i++ ){
-    sum = sum + ar[i];
+  for(var i = 0;  i < abdi.length; i++){
+    if(abdi[i] < asma[i]){
+        asmaScore++
+    }
+    else if(abdi[i] > asma[i]){
+      abdiScore++
+    }
+    else{
+
+    }
   }
+    var score = [asmaScore, abdiScore]
 
-document.getElementById("content").innerHTML = sum;
+document.getElementById("content").innerHTML = score ;
 
 </script>
 </body>

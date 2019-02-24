@@ -5,6 +5,7 @@
 }
 body{
   background-color: #121212;
+  color: #333;
 
 }
 .header{
@@ -16,7 +17,7 @@ body{
 .container{
 width: 300px;
 height: 300px;
-margin: 120px auto;
+margin: 100px auto 100px;
 background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
 box-shadow: 1px 2px 3px #111;
 border-radius: 4px;
@@ -30,4 +31,20 @@ color: white;
   text-align: center;
   position: relative;
   top: 40%;
+}
+.footer{
+  width: 890px;
+  height: 20%;
+  background-color: white;
+  padding: 30px ;
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin: 10px auto 30px;
+  border-radius: 5px;
+}
+.footer ul {
+  text-indent: 30px;
+  list-style: none;
+  padding-top: 10px;
 }
